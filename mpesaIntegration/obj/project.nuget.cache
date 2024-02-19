@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pwPrnbFA2vDVFnMkKE8vGnuYz7j/SbvVkSKC4V76PWH3rF2CnP/GiajJJvyLMT5EJ9N/BG0q9xPOYYpvEOWYbA==",
+  "dgSpecHash": "x6VO4DyHp6h6bD2N4/AgYRwlLRCdOnymW1x/+hscw+MNddU4A88SOcgbuhLfeXRg7oTotIzFs+qNV9/Zb5m8fg==",
   "success": true,
   "projectFilePath": "D:\\OgutuJoseph\\Projects\\C#\\dotnet-daraja\\mpesaIntegration\\mpesaIntegration.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\AB030WP\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
