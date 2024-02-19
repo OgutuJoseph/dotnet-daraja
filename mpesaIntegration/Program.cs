@@ -2,6 +2,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddHttpClient("mpesa", c => {
+    c.BaseAddress = new Uri("https://sandbox.safaricom.co.ke");
+});
 
 var app = builder.Build();
 
