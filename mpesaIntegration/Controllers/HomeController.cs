@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using mpesaIntegration.Models;
+using Newtonsoft.Json;
 
 namespace mpesaIntegration.Controllers;
 
@@ -33,11 +34,17 @@ public class HomeController : Controller
 
         var response = await client.SendAsync(request);
         var mpesaResponse = await response.Content.ReadAsStringAsync();
-
         // Console.WriteLine("mpesa response");
         // Console.WriteLine(mpesaResponse);
 
-        return mpesaResponse;
+        Token tokenObject = JsonConvert.DeserializeObject<Token>(mpesaResponse);
+
+        return tokenObject.access_token;
+    }
+
+    class Token {
+        public string access_token { get; set; }
+        public string expires_in { get; set; }
     }
 
     public IActionResult Privacy()

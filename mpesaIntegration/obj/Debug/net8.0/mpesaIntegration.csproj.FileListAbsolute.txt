@@ -29,3 +29,6 @@ D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\obj\Debug\net8.0\refin
 D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\obj\Debug\net8.0\mpesaIntegration.pdb
 D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\obj\Debug\net8.0\mpesaIntegration.genruntimeconfig.cache
 D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\obj\Debug\net8.0\ref\mpesaIntegration.dll
+D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\obj\Debug\net8.0\mpesaIntegration.csproj.AssemblyReference.cache
+D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\obj\Debug\net8.0\mpesaIntegration.csproj.CopyComplete
