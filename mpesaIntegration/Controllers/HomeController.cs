@@ -24,9 +24,20 @@ public class HomeController : Controller
     public async Task<string> GetToken() 
     {
         var client = _clientFactory.CreateClient("mpesa");
-        var authString = "ITNqYY0yJE0qF1hVbug5PmD0y6MdFWBG:IzCv1CjMkrrYI3Py";
+        var authString = "OF3t9e104IE8eYLlS15ur1YO4rpw5aP3:gDPw7eTaoVZyGlxs";
         var encodedString = Convert.ToBase64String(System.Text.ASCIIEncoding.ASCII.GetBytes(authString));
-        var url = "/oauth/v1/generate?grant_type=client_credentials";
+        var _url = "/oauth/v1/generate?grant_type=client_credentials";
+
+        var request = new HttpRequestMessage(HttpMethod.Get, _url);
+        request.Headers.Add("Authorization", $"Basic {encodedString}");
+
+        var response = await client.SendAsync(request);
+        var mpesaResponse = await response.Content.ReadAsStringAsync();
+
+        // Console.WriteLine("mpesa response");
+        // Console.WriteLine(mpesaResponse);
+
+        return mpesaResponse;
     }
 
     public IActionResult Privacy()
