@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Text;
 using Microsoft.AspNetCore.Mvc;
 using mpesaIntegration.Models;
 using Newtonsoft.Json;
@@ -47,9 +48,37 @@ public class HomeController : Controller
         public string expires_in { get; set; }
     }
 
-    public IActionResult Privacy()
+    // Register URL
+    public IActionResult RegisterURLs() 
     {
         return View();
+    }
+
+    [HttpGet]
+    [Route("register-urls")]
+    public async Task<string> RegisterMpesURLs () 
+    {
+        var jsonBody = JsonConvert.SerializeObject(new {
+            ValidationURL = "https://mydemo-url.com/confirmation",
+            ConfirmationURL = "https://mydemo-url.com/validation",
+            ResponseType = "Completed",
+            ShortCode = 600988
+        });
+
+        var jsonReadyBody = new StringContent(
+            jsonBody.ToString(),
+            Encoding.UTF8,
+            "application/json"
+        );
+
+        var token = await GetToken(); 
+        var client = _clientFactory.CreateClient("mpesa");
+        client.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
+
+        var url = "/mpesa/c2b/v1/registerurl";
+        var response = await client.PostAsync(url, jsonReadyBody);
+
+        return await response.Content.ReadAsStringAsync();
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
