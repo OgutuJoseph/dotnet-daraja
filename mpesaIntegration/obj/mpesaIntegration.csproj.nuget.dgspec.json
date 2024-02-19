@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OgutuJoseph\\Projects\\C#\\dotnet-daraja\\mpesaIntegration\\mpesaIntegration.csproj": {}
+    "d:\\OgutuJoseph\\Projects\\C#\\dotnet-daraja\\mpesaIntegration\\mpesaIntegration.csproj": {}
   },
   "projects": {
-    "D:\\OgutuJoseph\\Projects\\C#\\dotnet-daraja\\mpesaIntegration\\mpesaIntegration.csproj": {
+    "d:\\OgutuJoseph\\Projects\\C#\\dotnet-daraja\\mpesaIntegration\\mpesaIntegration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OgutuJoseph\\Projects\\C#\\dotnet-daraja\\mpesaIntegration\\mpesaIntegration.csproj",
+        "projectUniqueName": "d:\\OgutuJoseph\\Projects\\C#\\dotnet-daraja\\mpesaIntegration\\mpesaIntegration.csproj",
         "projectName": "mpesaIntegration",
-        "projectPath": "D:\\OgutuJoseph\\Projects\\C#\\dotnet-daraja\\mpesaIntegration\\mpesaIntegration.csproj",
+        "projectPath": "d:\\OgutuJoseph\\Projects\\C#\\dotnet-daraja\\mpesaIntegration\\mpesaIntegration.csproj",
         "packagesPath": "C:\\Users\\AB030WP\\.nuget\\packages\\",
-        "outputPath": "D:\\OgutuJoseph\\Projects\\C#\\dotnet-daraja\\mpesaIntegration\\obj\\",
+        "outputPath": "d:\\OgutuJoseph\\Projects\\C#\\dotnet-daraja\\mpesaIntegration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\AB030WP\\AppData\\Roaming\\NuGet\\NuGet.Config",

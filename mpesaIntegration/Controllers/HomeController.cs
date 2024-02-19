@@ -8,14 +8,22 @@ public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    private readonly IHttpClientFactory _clientFactory;
+
+    public HomeController(ILogger<HomeController> logger, IHttpClientFactory clientFactory)
     {
         _logger = logger;
+        _clientFactory = clientFactory;
     }
 
     public IActionResult Index()
     {
         return View();
+    }
+
+    public async Task<string> GetToken() 
+    {
+        
     }
 
     public IActionResult Privacy()
