@@ -1,5 +1,7 @@
 using System.Diagnostics;
+using System.Net.Mime;
 using System.Text;
+using _mpesaIntegration.Models;
 using Microsoft.AspNetCore.Mvc;
 using mpesaIntegration.Models;
 using Newtonsoft.Json;
@@ -79,6 +81,20 @@ public class HomeController : Controller
         var response = await client.PostAsync(url, jsonReadyBody);
 
         return await response.Content.ReadAsStringAsync();
+    }
+
+    // Confirmation Endpoint
+    [HttpPost]
+    [Route("payments/confirmation")]
+    [Produces(MediaTypeNames.Application.Json)]
+    public async Task<JsonResult> PaymentConfirmation([FromBody]MpesaC2B c2bPayments) 
+    {
+        var respond = new {
+            ResponseCode = 0,
+            ResponseDesc = "Processed"
+        };
+
+        return Json(respond);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
