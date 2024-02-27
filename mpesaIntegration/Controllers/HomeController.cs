@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using System.Net.Mime;
 using System.Text;
+using _mpesaIntegration.Data;
 using _mpesaIntegration.Models;
 using Microsoft.AspNetCore.Mvc;
 using mpesaIntegration.Models;
@@ -14,10 +15,13 @@ public class HomeController : Controller
 
     private readonly IHttpClientFactory _clientFactory;
 
-    public HomeController(ILogger<HomeController> logger, IHttpClientFactory clientFactory)
+    private ApplicationDbContext _dbContext;
+
+    public HomeController(ILogger<HomeController> logger, IHttpClientFactory clientFactory, ApplicationDbContext dbContext)
     {
         _logger = logger;
         _clientFactory = clientFactory;
+        _dbContext = dbContext;
     }
 
     public IActionResult Index()
@@ -93,6 +97,16 @@ public class HomeController : Controller
             ResponseCode = 0,
             ResponseDesc = "Processed"
         };
+
+        if (ModelState.IsValid) 
+        {
+            _dbContext.Add(c2bPayments);
+            var saveResponse = await _dbContext.SaveChangesAsync();
+        }
+        else
+        {
+            return Json(new { code = 0, errors = ModelState });
+        }
 
         return Json(c2bPayments);
     }
