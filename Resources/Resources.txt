@@ -1,0 +1,21 @@
+[[ Date ]]
+URL     : https://www.youtube.com/watch?v=hdPHc2vtC3c&list=PLcKuwRUZRXZKl7WVPF6eVO0DZiaZxEXro
+Title   : Mpesa Daraja API ASP.NET C#
+code    : https://github.com/bnjunge/asp.net-c-mpesa-integration
+Status  : Episode 03: 05.02
+
+Section 1: Mpesa API Daraja Integration - Part 1
+1. Introduction
+2. Create MVC Project
+3. Create HTTP CLient
+4. Create Mpesa Client
+5. Create Mpesa Request
+
+Section 2: Mpesa Integration Register URL
+
+
+Section 3: Consume Daraja API C2B Database Part 2
+
+
+Section 4: Consume Daraja API C2B Database
+
