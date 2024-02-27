@@ -111,6 +111,20 @@ public class HomeController : Controller
         return Json(c2bPayments);
     }
 
+    // Validation Endpoint
+    [HttpPost]
+    [Route("payments/validation")]
+    [Produces(MediaTypeNames.Application.Json)]
+    public async Task<JsonResult> PaymentValidation([FromBody]MpesaC2B c2bPayments) 
+    {
+        var respond = new {
+            ResponseCode = 0,
+            ResponseDesc = "Processed"
+        };
+
+        return Json(respond);
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
