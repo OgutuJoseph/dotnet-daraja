@@ -32,3 +32,17 @@ D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\obj\Debug\net8.0\ref\m
 D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\obj\Debug\net8.0\mpesaIntegration.csproj.AssemblyReference.cache
 D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\obj\Debug\net8.0\mpesaIntegration.csproj.CopyComplete
+D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\bin\Debug\net8.0\Humanizer.dll
+D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\bin\Debug\net8.0\MySqlConnector.dll
+D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\bin\Debug\net8.0\NetTopologySuite.dll
+D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.Json.Microsoft.dll
+D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.Json.Newtonsoft.dll
+D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.NetTopologySuite.dll
+D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\obj\Debug\net8.0\EFCoreMySqlNetTopologySuite.cs
+D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\obj\Debug\net8.0\EFCoreMySqlJsonNewtonsoft.cs
+D:\OgutuJoseph\Projects\C#\dotnet-daraja\mpesaIntegration\obj\Debug\net8.0\EFCoreMySqlJsonMicrosoft.cs
