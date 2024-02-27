@@ -94,7 +94,7 @@ public class HomeController : Controller
             ResponseDesc = "Processed"
         };
 
-        return Json(respond);
+        return Json(c2bPayments);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
